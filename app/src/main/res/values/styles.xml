@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="SmallLabelText">
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/lightGrey</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <style name="LargeLabelText">
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="LargeTitleText">
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SmallTitleText">
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="NormalReadingText">
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">@color/lightGrey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>
