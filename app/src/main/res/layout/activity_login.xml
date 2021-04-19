@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lighterGrey"
     android:layout_gravity="center"
-    android:layout_margin="10dp"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".activities.Login">
@@ -20,18 +20,7 @@
         app:layout_constraintEnd_toEndOf="@id/textInputLayout_email"
         app:layout_constraintStart_toStartOf="@id/textInputLayout_email"/>
 
-    <TextView
-        android:id="@+id/text_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="50dp"
-        android:gravity="top"
-        android:text="@string/login"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideline" />
+
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -41,9 +30,9 @@
         android:layout_margin="10dp"
         android:hint="@string/email_string"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="@id/text_title"
-        app:layout_constraintStart_toStartOf="@id/text_title"
-        app:layout_constraintTop_toBottomOf="@id/text_title">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -69,7 +58,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-
+        android:textColor="@color/black"
         android:id="@+id/submitLoginBtn"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
@@ -86,6 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:textColor="@color/inverted_orange"
         android:text="@string/new_to_app_text"
         app:layout_constraintEnd_toEndOf="@id/submitLoginBtn"
         app:layout_constraintStart_toStartOf="@id/submitLoginBtn"

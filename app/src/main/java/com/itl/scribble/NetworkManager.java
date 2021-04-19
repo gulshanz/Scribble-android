@@ -116,4 +116,19 @@ public class NetworkManager {
         stringRequest.setTag(TAG);
         requestQueue.add(stringRequest);
     }
+
+    public void Volley_GetRequestWithoutHeader(String URL, final HashMap<String, String> headerObj, String TAG
+            , String TAG_FOR_API) {
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, URL,
+                response -> {
+                    mNetworkResponse.getNetworkSuccessResponse(TAG, response, TAG_FOR_API);
+                }, error -> {
+            mNetworkResponse.getNetworkFailResponse(TAG, error, TAG_FOR_API);
+        }) {
+
+        };
+        stringRequest.setRetryPolicy(networkPolicy);
+        stringRequest.setTag(TAG);
+        requestQueue.add(stringRequest);
+    }
 }

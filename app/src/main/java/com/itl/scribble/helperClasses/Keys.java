@@ -35,4 +35,18 @@ public class Keys {
     public static final String TagForAPI_GET_NOTE_LIST = "profiles/notelist";
     public static final String TAG_POST_REGISTER="postRegister";
     public static final String TagForAPIRegister="profiles/register";
+
+    public static final String happy="Happy";
+    public static final String surprise="Surprise";
+    public static final String sad="Sad";
+    public static final String fear="Fear";
+    public static final String angry="Angry";
+
+    public static final String polarity="polarity";
+    public static final String subjectivity="subjectivity";
+
+    public static final String YOUTUBE_API_KEY = "AIzaSyAaoSKUCCiJpbl8ZjuzRMr_fxmLO_QWVPo";
+
+
+
 }

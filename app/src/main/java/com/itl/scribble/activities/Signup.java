@@ -40,6 +40,7 @@ public class Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySignupBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        setTitle("Signup");
         init();
     }
 

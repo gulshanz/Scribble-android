@@ -4,8 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
+        android:name=".Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Daily Diary"
@@ -13,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scribble"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.ShowPostsAct"></activity>
+        <activity android:name=".activities.Home"></activity>
+        <activity android:name=".activities.ShowPostsAct" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
@@ -28,7 +32,13 @@
             android:label="@string/title_activity_home_drawer"
             android:theme="@style/Theme.Scribble.NoActionBar" />
         <activity android:name=".activities.Signup" />
-        <activity android:name=".activities.Login"></activity>
+        <activity android:name=".activities.CreateOrEditNote" />
+        <activity android:name=".activities.OldNotes" />
+
+        <activity android:name=".activities.Profiles" />
+
+
+        <activity android:name=".activities.Login" />
     </application>
 
 </manifest>

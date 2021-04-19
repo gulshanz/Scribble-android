@@ -46,12 +46,13 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setTitle("Login");
 
 //        init();
         viewModel = new ViewModelProvider(this).get(LoginVM.class);
         viewModel.getProgressLiveData().observe(this, progressObserver);
         if (viewModel.chechIfIsLoggedIn()) {
-            Intent intent = new Intent(this, HomeDrawer.class);
+            Intent intent = new Intent(this, Home.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
             finish();
@@ -100,7 +101,7 @@ public class Login extends AppCompatActivity {
 
     private final Observer<Boolean> changeIntent = aBoolean -> {
         if (aBoolean){
-            startActivity(new Intent(this,HomeDrawer.class));
+            startActivity(new Intent(this,Home.class));
             finish();
         }
     };

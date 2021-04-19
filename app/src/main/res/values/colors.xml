@@ -8,6 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!--theme colors-->
+
+    <color name="orange">#FFA800</color>
+    <color name="inverted_orange">#005FFF</color>
+
+    <color name="orange_variant">#FFb840</color>
+    <color name="inverted_orange_varient">#010203</color>
+    <color name="color_on_variant">#FFA400</color>
 
 
     <color name="redColor">#EF3434</color>
@@ -22,6 +30,16 @@
 
     <color name="darkGrey">#808080</color>
 
+
+
+    <color name="floralWhite">#fffcf2</color>
+    <color name="periwinkeCyrola">#C2D7FF</color>
+    <color name="mintCream">#E3F2EA</color>
+    <color name="eriBlack">#252422</color>
+    <color name="flame">#EB5E28</color>
+    <color name="bananaMania">#F8E4B4</color>
+
+    <color name="transperent">#40000000</color>
 
     <color name="lighterGrey">#EEEEEE</color>
 </resources>

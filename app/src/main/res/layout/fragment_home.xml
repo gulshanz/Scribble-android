@@ -6,9 +6,20 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     android:orientation="vertical"
-    tools:context=".fragments.CreateOrEditNoteFragment"
+    tools:context=".activities.CreateOrEditNote"
     tools:viewBindingIgnore="false">
 
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageButton_mic"
+        android:layout_width="80dp"
+        android:elevation="2dp"
+        android:background="@drawable/vector_mic"
+        android:layout_marginBottom="@dimen/large_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="80dp"
+        app:cornerRadius="50dp"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,23 +34,16 @@
 
             <TextView
                 android:id="@+id/greetTextTV"
+                style="@style/LargeTitleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="@string/how_was_your_day"
-                style="@style/LargeTitleText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageButton
-                android:id="@+id/imageButton_mic"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/vector_mic"
-                app:layout_constraintBottom_toTopOf="@id/todaysPageWrittenEt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/greetTextTV" />
+
 
             <ProgressBar
                 android:id="@+id/progressBarTodayData"
@@ -50,21 +54,22 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/greetTextTV" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/todaysPageWrittenEt"
+
+            <EditText
+                android:id="@+id/todaysDataEt"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="20dp"
-                android:visibility="visible"
+                android:background="#00000000"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/greetTextTV" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
